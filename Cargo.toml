@@ -1,0 +1,19 @@
+[package]
+name = "bitoku-sdk-agent-native"
+version = "0.1.0"
+edition = "2021"
+description = "bitoku-sdk-agnet program"
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+no-entrypoint = []
+
+[dependencies]
+borsh = "0.9"
+thiserror = "1.0.20"
+solana-program = "1.14.13"
+
+[lib]
+crate-type = ["cdylib", "lib"]
